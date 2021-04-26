@@ -6,22 +6,18 @@ import math
 
 
 def negative_power(r, z):
-    if z == 0:
-        result = 0
-        return result
-    else:
-        i = 1
-        res = 1
-        while i <= abs(z):
-            res = res * r
-            i += 1
-        result = 1 / res
-        return result
+    i = 1
+    res = 1
+    while i <= abs(z):
+        res = res * r
+        i += 1
+    result = 1 / res
+    return result
 
 
-r = math.sqrt(2)
-z = -1
+x = math.sqrt(2)
+y = -10
 
-result_func = negative_power(r, z)
+result_func = negative_power(x, y)
 print('my   result: ', result_func)
-print('real result: ', r ** z)
+print('real result: ', x ** y)
